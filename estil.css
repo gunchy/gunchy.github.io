@@ -1,0 +1,546 @@
+
+#main{
+	width:974px;
+	padding:2em 10em 0 10em;
+
+}	
+/**********************************************/
+/* tractament elements capçalera de pàgina "header" */		
+/**********************************************/
+	
+/*format del menú superior de la pàgina web*/
+.menuSuperior{
+	width:76%;  		 /*ocupa el 76% de l’amplada de la pàgina */
+	background: #F00000; /*el color de fons de la capsa és vermell fosc.*/
+	float:left;			 /*es fa flotar a l'esquerra la capsa perquè després es pogui posar al costat de .cercador*/
+	padding:.5em 0 .4em 0;	/*s'ajusta l'amplada de la capsa per dalt i per baix.*/
+	text-transform: uppercase; /*es transforma tots el contingut d'aquesta capça a majúscules*/
+}
+
+/*format del cercador que hi ha al costat del menú superior*/
+.cercador{
+	width:24%;			/*ocupa el 24% de l’amplada de la pàgina */
+	background:#F00000; /*el color de fons de la capsa és vermell fosc.*/
+	float:right;			/*es fa flotar a l'esquerra la capsa perquè després es pogui posar al costat el .menuSuperior*/
+	padding:.2em 0 .4em 0;	/*s'ajusta l'amplada de la capsa per dalt i per baix.*/
+}
+	
+/*format de les llistes ul dels menús que hi han al head i al footer*/
+/*menu es del menuSuperior, menu2 del menuPrincipal i el menu3 és dels enllaços que hi ha en la seccio2 del footer*/
+.menu,.menu2,.menu3{
+	overflow: auto; /*s'inclou aquest atribut per tal d'amotllar la capsa a la mida correcte*/
+	clear:both; 	/*s'inclou aquest atribut perquè no s'obrepassing les demés capses que estan flotants*/
+	margin: 1px 0 2.5px 0;	/*s'ajusten els marges de dalt i baix de les llistes ul*/
+}
+
+/*s'ajusten les capses li del menu que hi ha al menuSuperior*/
+.menu li {
+	width: 140px;	/*s'ajusta l'amplada de cada li*/
+	font-size: 80%;	/*s'ajusta la grandària de la lletra de cada li*/
+	margin-left: -1em; /*s'ajusta el marge esquerre a -1em per tal d'obligar-lo a tirar més a l'esquerra*/
+	float:left;		/*això és el que fa que tots els literals del menúSuperior estiguien en línea horitzontal un al costat de l'altre*/
+}
+
+/*s'ajusten les capses li del menu que hi ha al menuPrincipal*/
+.menu2 li{
+	width: 110px;	/*s'ajusta l'amplada de cada li*/
+	float:left;		/*això és el que fa que tots els literals del menúSuperior estiguien en línea horitzontal un al costat de l'altre*/
+}
+
+/*s'ajusten les capses li del menu que hi ha al menuPrincipal*/
+.menu3 li{
+	width: 70px;	/*s'ajusta l'amplada de cada li*/
+	float:left;		/*això és el que fa que tots els literals del menúSuperior estiguien en línea horitzontal un al costat de l'altre*/
+}
+
+.menu li a,.menu2 li a, .menu3 li a  {
+	display: block;	/*es fa aquest atribut sobre els enllaços de cada li dels menús per tal d'ajustar la distància entre cada literal del menú*/
+	text-align:center;	/*es centra el text de cada li dels menús per tal de millorar aspectes de visualització del text*/
+}
+
+.menu li a{
+	width: 120px; /*s'ajusta l'amplada del text dels enllaços del menuSuperior ja que amb la lletra majúscula varia una mica la grandària de la lletra 
+					i desajustava la mida de la capsa*/
+}
+
+.menu a:link,
+.menu2 a:link{
+	color: white; /*per defecte els enllaços de menuSuperior i menuPrincipal tenen la lletra de color blanc*/
+}
+
+.menu a:visited ,
+.menu2 a:visited{
+	color: white; /*quan es visiten els enllaços de menuSuperior i menuPrincipal tenen la lletra de color blanc*/
+}  
+
+.menu a:hover ,
+.menu2 a:hover{
+	background: white;  /*quan es posa el ratolí per sobre dels enllaços de menuSuperior i menuPrincipal tenenel fons de color blanc*/
+	color:#F00000;		/*quan es posa el ratolí per sobre dels enllaços de menuSuperior i menuPrincipal tenen la lletra de color vermell*/
+}  
+
+/*tractament de la imatge del logo principal de la web*/
+.logo{
+	width:95%;			/*s'ajusta l'amplada de la imatge a la web*/
+	margin-top:1em;		/*s'ajusta el marge superior per tal d'ampliar-lo*/
+	float:left;			/*es mou cap a l'esquerra per tal que després es pogui posar la imatge de xarxes socials*/
+	text-align:center;	/*es posa la imatge al centre de la capsa*/
+}
+
+/*tractament de la imatge de les xarxes socials.*/
+/*faltaria el tractament dels sprites.*/
+.imgXarSocials{
+	width:5%;	/*s'ajusta l'amplada de la imatge a la web*/
+	height:20%;	/*s'ajusta l'altura de la imatge a la web*/
+	float:left;	/*es mou cap a l'esquerra per tal que pugui estar al a mateixa línea de el logo principal*/
+}
+
+/*format del menú principal de la pàgina web*/
+.menuPrincipal{
+	padding:.2em 0 .2em 0; /*s'ajusta l'amplada de la capsa per dalt i per baix.*/
+	width:100%;			   /*ocupa el 100% de l’amplada de la pàgina */
+	background:#F00000 ;   /*el color de fons de la capsa és vermell fosc.*/
+	clear:both;			   /*s'inclou aquest atribut perquè no s'obrepassing les demés capses que estan flotants*/
+	}
+
+
+/****************************************/
+/* tractament elements peu de pàgina "footer" */	
+/****************************************/
+
+/*Tractament de la seccio1 del footer*/
+/*Aqust conté els enllaços corresponents als  enllaços dels logos de l'esquerra de festivalsitges-portada-cat.pdf i els banners.*/
+.seccio1{
+	clear:both;	/*s'inclou aquest atribut perquè no s'obrepassing les demés capses que estan flotants*/
+	height:85%;	/*s'ajusta l'altura de la imatge a la web*/	
+	width:100%;	/*ocupa el 100% de l’amplada de la pàgina */
+	padding-top:4em; /*s'ajusta l'amplada de la capsa per dalt*/
+}
+
+/*conté les dos columnes d'enllaços dels logos de l'esquerra de festivalsitges-portada-cat.pdf*/
+.LinksSeccio1{
+	width:50%;	/*ocupa el 50% de l’amplada de la pàgina */
+	float:left;	/*es mou cap a l'esquerra per tal després pugui rebre les imatges del banner al seu costat*/
+	}
+	
+/*conté la primera columna d'enllaços dels logos de l'esquerra de festivalsitges-portada-cat.pdf*/
+.linksPeu1{
+	width:50%;	/*ocupa el 50% de l’amplada de la pàgina */
+	float:left;	/*es mou cap a l'esquerra per tal després pugui la columna 2 d'enllaços de festivalsitges-portada-cat.pdf*/
+	margin-left:5em; /*es tira una mica la columna cap a l'esquerra per temes de millora de visibilitat del format de la pàgina.*/
+}
+
+/*conté la segona columna d'enllaços dels logos de l'esquerra de festivalsitges-portada-cat.pdf*/
+.linksPeu2{
+	width:32%;	/*ocupa el 32% de l’amplada de la pàgina */
+	float:left; /*es mou cap a l'esquerra per tal de poder-se posar al costat de la columna 1 d'enllaços de festivalsitges-portada-cat.pdf*/
+}
+
+/*tracta el format del llistat ul de cada columna dels linksPeu1 i linksPeu2*/
+.linksPeu{
+	padding-left:.2em; /*es mou una mica la columna cap a l'esquerra per temes de millora de visibilitat del format de la web*/
+	padding-right:.2em; /*es mou una mica la columna cap a la dreta per temes de millora de visibilitat del format de la web*/
+}
+
+
+.imatgesBanner{
+	width:19%; /*ocupa el 19% de l’amplada de la pàgina */
+	float:right;	/*es mou cap a la dreta */
+	margin-right:18em; /*el marge dret es redueix a 18em. Es el que fa que es vegi tocant la columna2 d'enllaços*/
+}
+
+/* seccio que conté els enllaços informatius d'avís legal i Sitemap i l'addres*/
+.seccio2{
+	background: #C5C6C8; /*el fons de la capsa sencera és gris*/
+	clear:both;	/*fa que limiti la seva extensió i no sobrepassi la seccio1.*/		
+}
+
+/*conté el llistat ul dels enllaços informatius d'avís legal i Sitemap */
+.menu3{
+	margin-left: 17em; 
+}
+
+.menu3 li a{
+	text-decoration: underline; /*posa la linea sota el texte de cada enllaç del menu3*/
+}
+
+.menu3 a:link{
+	color: black;	/*el fons de lletra per defecte és negre*/
+}
+.menu3 a:visited{
+	color: black;	/*quan s'hagi clicat sobre l'enllaç, la lletra seguirá negre*/
+}  
+
+address{
+	text-align:center;	/*es centra el texte de l'adreça*/
+}
+
+/**********************************************/
+/* tractament dades bodyCopy pàgina "PORTADA"      */
+/**********************************************/
+
+/* noticia principal*/
+.imgPrincipal{
+	margin-top:1em;
+}
+
+.titol0 ,.titol1,.titol2{
+	width: 30%;
+	height: 1.6%;
+	background: black;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	padding:1em;
+	opacity:0.4;
+}
+
+.titol0:hover,
+.titol1:hover,
+.titol2:hover{ 
+	opacity:1.0;
+}
+
+.titol0 {
+	top: 41.5em;
+	left: 13.3%;
+}
+
+/*tractament noticies destacades */
+
+.notDest1{
+	width:475px;
+	float:left;	
+	margin-top:1em;
+}
+
+.titol1 {
+	top: 66.2em;
+	width: 35%;
+	left: 13.3%;	
+}
+
+.notDest2{
+	width:475px;
+	float:right;
+	margin-top:1em;
+}
+
+.titol2 {
+	top: 66.2em;
+	left: 52.7%;
+	width: 35%;
+}
+
+/*tractament noticies vista petites */
+
+.col1{
+	width:48.7%;
+	float:left;	
+	margin-top:1em;
+}
+
+.col2{
+	width:48.7%;
+	float:left;	
+	margin: 1em 0 0 1.9em;
+}
+
+.imgNoticia{
+	width:25%;
+	float:left;	
+}
+
+.texteNoticia{
+	width:75%;
+	float:left;	
+}
+
+.subTitol{
+	margin:0;	
+	color:#F00000 ;
+	font-weight: bold;
+}
+
+.texte{
+	font-size: 84%;
+	margin-top:.4em;
+	color:grey;
+}
+
+#mesNoticiesEnllas{
+	float:right;
+}
+
+#mesNoticiesEnllas a{
+	text-decoration: underline;
+}
+
+/*********************************************/
+/* tractament dades bodyCopy pàgina "NOTICIA"     */
+/*********************************************/
+
+
+.breadcrumb{
+	float:left;	
+	padding:.3em;
+	margin-top:.5em;	
+}
+	
+.colNoticia{
+	width:656px;
+	margin-left:5%;
+	float:left;	
+	margin-top:1em;
+}
+
+.dataTitular{
+	color: grey;
+	margin-bottom: 1.3em;
+}	
+
+.imgTitular{
+	margin-top:1em;
+}
+
+.entradeta{
+	font-weight:bold;
+	margin-top:1em;	
+}
+	
+.mesNoticies{
+	border-top:1px solid #C5C6C8;
+	border-bottom:1px solid #C5C6C8;
+	padding-top:1em;
+	float:left;	
+	margin-top:.5em;	
+}
+	
+.contingutMesNot{
+	padding:0 0 3em 0;
+}
+
+.dataNoticia{
+	float:left;	
+	width:15%;
+	color: grey;
+	font-size:.9em;	
+	padding-top:0.2em;
+}
+
+.resumNoticia{
+	float:left;	
+	width:85%;
+	font-size:1em;	
+	font-weight:bold;	
+	color:#F00000 ;	
+}
+	
+/****************************************/
+/* tractament dades bodyCopy pàgina "FILM"   */
+/****************************************/	
+.bodyCopy{
+	font-family: tahoma, arial, sans-serif;
+	font-size: 80.5%;
+}
+
+.titolDirectorFilm{
+	background:#C5C6C8;
+	padding: .5em 0 .5em 0;
+	padding-left:1em;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+}
+
+#titolFilm{
+	font-size:120%;
+}
+
+#autorFilm{
+	padding-bottom:1em;
+}
+
+.projeccionsFilm{
+	clear:both;
+	padding-top:1em;	
+}
+
+#trailerFilm{
+	clear:both;
+}
+
+.imatgeFilm{
+	padding-top:1em;
+}
+
+.fitxaTecnicaFilm{
+	padding-top:2em;	
+}
+
+.fitxaTecnicaFilm a{
+	color:black;
+}
+
+#duradaFilm{
+	padding-top:2em;
+}
+
+#lugarFilm{
+	padding-top:2em;
+	padding-bottom:2em;
+}
+
+.projeccionsFilm li{
+	list-style-type: disc;
+}
+
+
+table {
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin-top:1em;
+	font-size: small;
+	color:#424242;
+	font-family: tahoma, arial, sans-serif;
+}
+
+th, td {
+	text-align: left;
+	border: 1px solid #A4A4A4;
+	padding-left:.8em;
+	font-weight:bold;	
+}
+
+th{
+	background:#C5C6C8;
+	padding:.5em;
+}
+
+.titolProjeccFilm{
+	padding-left:1.5em;
+	color:#F00000 ;
+}
+
+.duradaProjFilm{
+	font-weight:normal;	 /*en la captura d'image de film es veu com si no estigués en negreta*/
+}
+
+.col1Film{
+	width:48%;
+	float:left;	
+}
+
+.col2Film{
+	width:51%;
+	float:left;	
+	margin-left:0.3em;
+}
+/*************************************************/
+/* tractament dades bodyCopy pàgina "PRORAMACIO"     */
+/*************************************************/
+
+.directorFilmProg li{
+	list-style-type: disc;
+	color: black;
+	font-weight: normal;
+}
+
+.directorFilmProg{
+	padding-left:0.8em;
+	margin:0.5em;
+}	
+
+.enllasVermell a:link, 
+.resumNoticia a:link,
+.subTitol a:link,
+.titolProjeccFilm a:link,
+.breadcrumb a:link,
+.linksPeu a:link{
+	color: #F00000;	/*tots aquestes enllaços tenen la lletra per defecte de color vermell*/
+}
+
+.enllasVermell a:visited, 
+.resumNoticia a:visited,
+.subTitol a:visited,
+.titolProjeccFilm a:visited,
+.breadcrumb a:visited,
+.linksPeu a:visited{
+	color:#F00000;	/*tots aquestes enllaços es pinten en color vermell quan s'han clicat a sobre d'ells*/
+}  
+
+.enllasVermell a:hover, 
+.resumNoticia a:hover,
+.subTitol a:hover,
+.titolProjeccFilm a:hover,
+.breadcrumb a:hover,
+.linksPeu a:hover{
+	color: black;	/*tots aquestes enllaços es pinten en negre quan es passa el cursor per sobre*/
+}  
+
+.taulaProgr th,td{
+	margin:.2em;
+}
+
+/********************************************/
+/* tractament elements genèrics a totes les pàgines  */
+/********************************************/	
+li{
+	list-style-type: none;	/*per defecte, s'eliminen els puntets de tots els li de les llistes*/
+}
+
+a{
+	text-decoration:none;	/*per defecte s'elimina la underline que tenen tots els enllaços sota de literal*/
+}
+
+/*botó compartir que conté la web noticia.html i film.html*/
+.compartir{
+	background:#F00000 ;
+	color:white;
+	text-transform: uppercase;
+	width:13%;
+	text-align:center;	
+}
+
+/*són classes que posen el color de la lletra en vermell i en negreta*/
+.vermellBold, .vermellBoldSub{
+	font-weight:bold;	
+	color:#F00000 ;
+}
+
+/*és una classe que posa en negreta el texte */
+.negreBold{
+	font-weight:bold;	
+}
+
+/*aquesta classe fa que el que texte dels enllaós negreBol sigui de color negre*/
+.negreBold a:link{
+	color:black;
+}
+
+/* deixa l'enllaç visitat de color negre*/
+.negreBold a:visited{
+	color:black;
+}
+
+/* quan es posa el cursor a sobre canvi el color de texte a vermell*/
+.negreBold a:hover{
+	color:#F00000 ;
+}
+
+/* classe que subratlla el texte i el formateja amb una mida específica de lletra i altura de la capsa*/
+.vermellBoldSub{
+	border-bottom:2px solid #F6CEEC;
+	padding-top:1em;
+	font-size:120%;
+}
+
+/*tractament del color de fons de les files de la taula de la pàgina fiml.html*/
+.odd th, .odd td {
+background: #eee;
+}
+
+/*s'eliminen tots els borders de les imatges*/
+img { 
+	border: 0; 
+}
